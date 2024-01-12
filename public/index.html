@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#000000">
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+	<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+	<title>React App</title>
+</head>
+ 
+<body>
+	<noscript>
+		You need to enable JavaScript to run this app.
+	</noscript>
+	<div id="root">
+    <div>
+      <label for="message">Key Name</label>
+      <input type="text" id="kname" name="kname" value="BLAH"/>
+    </div>  
+    <div>
+      <label for="message">Private Key</label>
+      <input type="text" id="pkey" name="pkey"/>
+    </div>
+    <div>
+      <label for="message">Passcode</label>
+      <input type="text" id="passcode" name="passcode" value="123400000000000000000"/>
+    </div>
+    <div>
+      <button id="importKey">Import Key</button>
+      <button id="exportKey">Create/Export Key</button>
+    </div>
+
+    <div>
+      <label for="message">Plain Message</label>
+      <input type="text" id="message" name="message"/>
+    </div>
+    <div>
+      <label for="encryptedMessage">Encrypted Message</label>
+      <input type="text" id="encrypted-message" name="encrypted-message"/>
+    </div>
+    <div>
+      <button id="encrypt">Encrypt</button>
+      <button id="decrypt">Decrypt</button>
+    </div>
+    <div>
+      <button id="store">Store Encrypted</button>
+      <button id="load">Load Encrypted</button>
+    </div>
+  </div>
+  <script src="src/index.js"/>
+</body>
+
+</html>
